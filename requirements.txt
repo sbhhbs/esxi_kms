@@ -1,0 +1,16 @@
+certifi==2021.5.30
+cffi==1.14.6
+charset-normalizer==2.0.5
+cryptography==3.4.8
+enum-compat==0.0.3
+greenlet==1.1.1
+idna==3.2
+importlib-metadata==4.8.1
+pycparser==2.20
+PyKMIP==0.10.0
+requests==2.26.0
+six==1.16.0
+SQLAlchemy==1.4.23
+typing-extensions==3.10.0.2
+urllib3==1.26.6
+zipp==3.5.0
