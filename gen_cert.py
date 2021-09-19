@@ -95,22 +95,22 @@ def main():
         root_key
     )
 
-    john_doe_client_key = create_rsa_private_key()
-    john_doe_client_certificate = create_certificate(
-        u"Bob",
-        john_doe_client_key,
-        root_certificate,
-        root_key,
-        client_auth=True
-    )
-    jane_doe_client_key = create_rsa_private_key()
-    jane_doe_client_certificate = create_certificate(
-        u"Bob",
-        jane_doe_client_key,
-        root_certificate,
-        root_key,
-        client_auth=True
-    )
+    # john_doe_client_key = create_rsa_private_key()
+    # john_doe_client_certificate = create_certificate(
+    #     u"Bob",
+    #     john_doe_client_key,
+    #     root_certificate,
+    #     root_key,
+    #     client_auth=True
+    # )
+    # jane_doe_client_key = create_rsa_private_key()
+    # jane_doe_client_certificate = create_certificate(
+    #     u"Bob",
+    #     jane_doe_client_key,
+    #     root_certificate,
+    #     root_key,
+    #     client_auth=True
+    # )
     # john_smith_client_key = create_rsa_private_key()
     # john_smith_client_certificate = create_certificate(
     #     u"John Smith",
@@ -151,30 +151,30 @@ def main():
                 serialization.Encoding.PEM
             )
         )
-    with open("client_key_john_doe.pem", "wb") as f:
-        f.write(john_doe_client_key.private_bytes(
-            encoding=serialization.Encoding.PEM,
-            format=serialization.PrivateFormat.PKCS8,
-            encryption_algorithm=serialization.NoEncryption()
-        ))
-    with open("client_certificate_john_doe.pem", "wb") as f:
-        f.write(
-            john_doe_client_certificate.public_bytes(
-                serialization.Encoding.PEM
-            )
-        )
-    with open("client_key_jane_doe.pem", "wb") as f:
-        f.write(jane_doe_client_key.private_bytes(
-            encoding=serialization.Encoding.PEM,
-            format=serialization.PrivateFormat.PKCS8,
-            encryption_algorithm=serialization.NoEncryption()
-        ))
-    with open("client_certificate_jane_doe.pem", "wb") as f:
-        f.write(
-            jane_doe_client_certificate.public_bytes(
-                serialization.Encoding.PEM
-            )
-        )
+    # with open("client_key_john_doe.pem", "wb") as f:
+    #     f.write(john_doe_client_key.private_bytes(
+    #         encoding=serialization.Encoding.PEM,
+    #         format=serialization.PrivateFormat.PKCS8,
+    #         encryption_algorithm=serialization.NoEncryption()
+    #     ))
+    # with open("client_certificate_john_doe.pem", "wb") as f:
+    #     f.write(
+    #         john_doe_client_certificate.public_bytes(
+    #             serialization.Encoding.PEM
+    #         )
+    #     )
+    # with open("client_key_jane_doe.pem", "wb") as f:
+    #     f.write(jane_doe_client_key.private_bytes(
+    #         encoding=serialization.Encoding.PEM,
+    #         format=serialization.PrivateFormat.PKCS8,
+    #         encryption_algorithm=serialization.NoEncryption()
+    #     ))
+    # with open("client_certificate_jane_doe.pem", "wb") as f:
+    #     f.write(
+    #         jane_doe_client_certificate.public_bytes(
+    #             serialization.Encoding.PEM
+    #         )
+    #     )
     # with open("client_key_john_smith.pem", "wb") as f:
     #     f.write(john_smith_client_key.private_bytes(
     #         encoding=serialization.Encoding.PEM,
