@@ -29,4 +29,4 @@ Basically, the image expect a `config` directory and a `storage` directory in `/
 
 `storage` directory is where the sqlite saved data will be.
 
-`config` in git for contains example config and certificates. You can use it as is (and it is of course not secure). You can also generate new certificate by running `python gen_certs.py`
+`config` in git contains example config and certificates. You can use it as is (and it is of course not secure)or generate new certificate by running `python gen_certs.py`
