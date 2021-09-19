@@ -25,7 +25,8 @@ services:
 
 Basically, the image expect a `config` directory and a `storage` directory in `/root/app`
 
-`config` should contains a `server.conf` (for what can be put there, see [PyKMIP's doc](https://pykmip.readthedocs.io/en/latest/server.html#configuration)). See `config` in git for example.
+`config` should contains a `server.conf` (for what can be put there, see [PyKMIP's doc](https://pykmip.readthedocs.io/en/latest/server.html#configuration)). 
 
 `storage` directory is where the sqlite saved data will be.
 
+`config` in git for contains example config and certificates. You can use it as is (and it is of course not secure). You can also generate new certificate by running `python gen_certs.py`
