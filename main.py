@@ -50,6 +50,6 @@ if __name__ == '__main__':
     except Exception as e:
         logger.exception('Exception received while serving: {0}'.format(e))
     finally:
-        server.close()
+        server.stop()
 
     logger.info('Shutting down KMIP server')
